@@ -1,0 +1,16 @@
+
+Wireshark is a network protocol analyzer, or an application that captures packets from a network connection, such as from your computer to your home office or the internet
+
+Wireshark uses -
+• Troubleshoot network problems
+• Learn network protocol internals
+• Debug protocol/program implementation
+• Examine network-related security issues
+
+first we need to choose an interface to sniif
+then when we are in there we can filter so we can find spacific things:
+
+• Here are some basic filters –
+• Names of protocols.
+• ip.addr == <IP address>
+there is more filters you can check in wire shark
