@@ -1,0 +1,893 @@
+#      print(""): prints whatever we wrote :
+# print("i like pizza")
+# print("its realy bad") 
+
+#         #: ignors the sentence after it usally used to make a title
+
+#           #variables 
+
+#        string: either "" or '': 
+
+# your_name="bro"
+# food="pizza"
+# email="brobro@gmail.com"
+
+# print(your_name)
+# print(food)
+# print(email)
+
+#      f string when you want to print a word then a variable:
+# print(f"hello {your_name}")
+# print(f"you like {food}?")
+# print(f"is your email {email}?")
+ 
+#       integers used for whole numbers:
+# age=25
+# items=4
+# num_of_students=30
+# print(f"your age is {age}?")
+# print(f"your total items is {items}")
+# print(f"in the claas we have {num_of_students} students")
+
+#       float used for non whole numbers:
+# price= 10.99
+# your_bank_balance= 10.99
+# distance=10.5
+# print(f"the pizza costs {price} sir")
+# print(f"your bank balance is ${your_bank_balance}")
+# print(f"your distance from me is {distance}km")
+
+#       boolean either true or false:
+# student=True
+# for_sale=False
+# is_online=True
+
+#if student:
+#    print("you are a student")
+#else:
+#    print ("you arent a student")
+
+#if for_sale:
+#    print("this item is for sale")
+#else:
+#    print("this item is not for sale")    
+
+#if is_online:
+#    print("you are ONLINE")
+#else:
+#    print("you are OFFLINE")    
+
+#   typecasting the abilty to convert from 1 variable to another using type command and to identefy the type of a variable:
+# word="broo"
+# age= 21
+# price= 20.99
+# is_student=True
+
+#type of a variable:
+# print(type(is_student))
+
+#change a variable type:
+
+#float to int
+# price=int(price)
+# print(price)
+
+#int to float
+# age=float(age)
+# print(age)
+
+#int to str it stays the same but does this: "21"
+# age=str(age)
+
+#how to do an addup of somthing only work when with str
+# age += "1"
+# print(age)
+
+#str to bool if word= anything it will type true if nothing is wrriten it will be false (can be used to check if someone entered a name)
+# word=bool(word)
+# print(word)
+
+
+# input: (if we type int before input we can do things with numbers)
+
+# name = input("what is your name?:")
+# age = int(input("what is your age?:"))
+
+# age = age +1
+
+# print(f"hello {name}")
+# print("happy birthday")
+# print(f"youre {age} years old")
+
+# exercise 1 a calculator:
+
+# width = float(input("enter the width: "))
+# length = float(input("what is the length: "))
+# area = width * length 
+# print(f"the area of the rectangale is {area}")
+
+#exercise 2 a shopping cart:
+
+# item = input("what item would you like?: ")
+# price = float(input("what is the price for this item?: "))
+# quantity = int(input("how many would you like?: "))
+# total = price * quantity 
+# print(f"your total is {total}$")
+
+
+#operators
+# friends = 10
+
+#    addition
+# friends = friends +1
+# or 
+# friends += 1
+
+#   subtraction
+# friends = friend - 1
+# or
+# friends -= 1
+
+#   multiplication
+# friends = friends * 1
+# or
+# friends *= 1
+
+#      division
+# friends = friends / 2
+# or 
+# friends /= 
+
+#     division cut
+# friends = friends // 2  (checks to see how many times an num fits into a num and print it)
+# or 
+# friends //=
+#     in the power of
+# friends = friends ** 1
+#or
+# friends **= 1
+
+#       remainder
+# divide to group by the num you choose and see if theres a friend who isnt in a group
+#remainder = friends % 3  when i do this there will be 1 remainder
+
+
+#functions:
+
+# x = 3.14
+# y = 4
+# z = 5
+
+#     round: 
+# result = round(x)
+# print(result)
+
+#      abs:
+# result = abs(y)
+# print(result)
+
+#      pow:
+# result = pow(4,5)
+# print(result)
+
+#     max:
+# result = max(x,y,z)
+# print(result)
+
+#     min:
+# result = min(y,x,z)
+# print(result)
+
+# import math is a moudle for calculations
+# import math
+
+# x = 9.9
+# print(math.pi) (gives the value of pie)
+# print(math.e) (gives the  value of e)
+# result = math.sqrt(x) (gives the squre root of the number inserted)
+# print(result)
+# result = math.ceil(x) (always rounds a number up)
+# print(result)
+# result = math.floor(x) (always rounds a number down)
+# print(result)
+
+# exrecise 1: 
+# import math
+
+# radius = float(input("enter the radius of the circle:"))
+
+# circumference = 2 * radius * math.pi
+
+# print(f"the circumference of the circle is: {round (circumference,2)}cm ")
+
+#exrecise 2:
+# import math
+
+# radius = float(input("enter the radius of the circle: "))
+
+# area = math.pi * pow(radius,2)
+
+# print(f"the area of the circle is {round(area,3)}cm^2")
+
+# exercise 3:
+# import math 
+
+# a = float(input("enter the length of side a: "))
+# b = float(input("enter the length of side b: "))
+# c = math.sqrt(pow(a,2)+pow(b,2))
+
+# print(f"side c is {round(c,2)}cm 
+
+# if = do some code only if some condition is true
+# ELSE do something else 
+# elif-else if after a false if  we can nake another condition before else
+# elif not checks to see if somthing is not true
+
+# age = int(input("enter your age: "))
+#if age >= 100:
+#    print("sorry you are to old to sign up")elif age >= 18:
+#    print("you are now signed up")    
+#elif age <= 0:
+#    print("sorry you haven't been born yet")    
+#else:
+#    print("you must be 18+ to sign up")
+
+# response = input("would you like some food? (y/n): ")
+# if response == "y":
+#    print("here you go have some")
+# else:
+#    print("okay then more for me")
+
+# for_sale = True
+
+# if for_sale:
+#    print("this item is for sale")
+    
+# else:
+#    print("sorry this item isn't for sale")    
+
+
+
+# LOGICAL OPERATORS:
+
+# OR: if one of the conditions is true  the whole statement is true 
+# temp = 25
+# is_raining = False
+# if temp > 35 or temp < 0 or is_raining:
+#     print("sorry the out door event is canceled :(")
+#else:
+#     print("the outdoor event is still scheduled")    
+
+# AND: both conditions must be true in order for the statment to work
+
+# temp = 25
+# is_sunny = True
+# if temp >=36 and is_sunny:
+#     print("it is HOT outside")
+#     print("it is sunny out side")
+# elif temp <= 0 and is_sunny:
+#     print("it is cold outside")
+#     print("it is sunny outside")
+# elif 25 > temp > o and is_sunny:
+#     print("it is warm out side")
+#     print("it is sunny outside")
+
+#not: check to see if something is false if it is then its true
+# is_sunny = False
+# temp = 25
+
+# if temp > 25 and not is_sunny:
+#     print("it is hot outside:")
+#     print("it is cloudy outside:")
+
+
+# conditional expressions: shorting the code in if statment: X if condition else Y
+
+# num = 5
+# a =  6
+# b = 7
+# age = 25
+# tempeture = 39
+# user_role = "guest"
+# print("positive" if num > 0  else "negative")
+# result = "even" if num % 2 == 0 else "odd"
+# print(result)
+# max_num = a if a > b else b 
+# min_num = a if a < b else b 
+# print(min_num)
+# status = "adult" if age >= 18 else "child"
+# +print(status) 
+# weather = "hot" if tempeture > 20 else "cold"
+# print(weather)
+# access_level = "full access" if user_role == "admin" else "limited access"
+# print(access_level) 
+
+
+# STRING METHEODS:
+# name = input("enter your full name: ")
+# phone_number = (input("enter your phone number: " ))
+
+# len: check to see the length of a string
+# result = len(name)
+# print(result)
+
+# name.:
+
+# name.find: finds the place of the first symbol of your choice 
+# result = name.find("o")
+# print(result)
+
+# name.rfind: finds the place of the last symbol of your choice if there were none it will return -1
+# result = name.rfind ("q")
+# print(result)
+
+# name.capitalize: capitalize the first letter in a string
+# name = name.capitalize ()
+# print(name)
+
+# name.upper: makes al the letter upercase
+# name = name.upper ()
+# print(name)
+
+# name.lower: makes all the letter lowercase
+# name = name.lower ()
+# print(name)
+
+# name.isdigit : checks to see if all characters are digit if yes it returns true if not false
+# result = name.isdigit ()
+# print(result)
+
+# name.isalpha : checks to see if all characters are alphabetical if yes it returns true if not false if it has spaces it returns false
+# result = name.isalpha ()
+# print(result)
+
+# name.count: counts how many of a chosen symbol there are
+# result = phone_number.count("-")
+# print(result)
+
+# phone_number.replace:can replace one symbol with another
+# phone_number = phone_number.replace("-"," ")
+# print(phone_number)
+
+#if you want to look for more strings methods do:
+#print(help(str))
+
+
+
+# STRING INDEXING : [start:end:step]
+
+# credit_number = "1234-1233-1111-2222"
+
+# print(credit_number[0]) #(prints the first syhmbol in a str )
+# print(credit_number[0:4]) #(prints from a symbol everything between and the last)
+# print(credit_number[5:9])
+# print(credit_number[5:]) #prints everything from the fifth symbol or whatever number you choose til the end
+# print(credit_number[-1]) #print the last number
+# print(credit_number[-2]) #prints second from last etc...
+# print(credit_number[::2])  #thats a step this one counts in twos
+
+# last_digits = credit_number[-4:]
+# print(f"XXXX-XXXX-XXXX-{last_digits}")
+
+# credit_number = credit_number[::-1] # reverses a string
+# print(credit_number)
+
+
+# FORMAT SPECIFIERS: {value:flags}
+
+# price = 12.2324
+
+# print(f"price is $ {price:.2f}")  #short the floating point numbers by the number you choose in this case it will shorten it to 2 numbers after the dot
+# print(f"price is $ {price:10}")   # make it have 10 spaces
+# print(f"price is $ {price:<10}")  # lefting the code
+# print(f"price is $ {price:>10}")  # righting the code
+# print(f"price is $ {price:^10}")  # centralize the code
+# print(f"price is $ {price:+}")    # checks to see if a number is positive if do it adds a plus to him 
+# print(f"price is $ {price:,}")    # seperate the thousands by commas
+# print(f"price is ${price:+,.2f}") # you can use more than one format specifiers at a time
+
+
+# WHILE LOOPS: excute some code while some condition is true
+
+# name = input("enter your name: ")
+# age = int(input("enter your age : "))
+
+# while name == "":
+#     print("you did not enter your name")
+#     name = input("enter your name: ")
+# print(F"hello: {name}")    
+
+# while age < 0:
+#     print("sorry age cant be in negatives")
+#     age = int(input("enter your age: "))
+# print(f"you are {age} years old")    
+
+# food = input("enter a food you like (q to quit): ")
+
+# while not food == "q":
+#     print(f"you like {food}:")
+#     food = input("enter another food you like (q to quit: )")
+# print("bye bye")    
+
+# num = int(input("enter a number between 1-10: "))
+
+# while num < 1 or num > 10:
+#     print(f"{num} is valid:")
+#     num = int(input("enter a number between 1-10: "))
+# print(f"your number is {num}:")
+
+
+# FOR LOOPS: EXCUTE A BLOCK OF CODE A FIXED NUMBER OF TIMES
+# creditcardnumber = "1234-1234-1234-1234"
+
+#for x in range(1,11): (counts from 1 to 10 )
+#     print(x)
+
+# for i in reversed(range(1,11)): (counts from 10 to 1 then prints happy new year)
+#     print(i)
+# print("happy new year")    
+
+# for w in range(1,11 ,3): (counts in steps of 3 from 1 to 10)
+#     print(w)
+
+# for x in range(1,21): (counts from 1 to 20 but skips the num 13)
+#     if x == 13:
+#         continue
+#     else:
+#         print(x)
+
+# for x in creditcardnumber: (displays each character of a string 1 by 1)
+#     print(x)
+
+
+
+#NESTED LOOPS: A LOOP WITHIN ANOTHER LOOP (OUTER,INNER)
+#         OUTER LOOP:
+#             INNER LOOP:
+
+# for x in range(3): #every thing inside this loop will reapit 3 times
+#  for y in range (1,10):
+#        print(y, end=" ") # makes all the numbers be on the same line and you can seprate then with a chosen chracter
+#    print()
+
+
+
+# COLLECTIONS: single variable used to store multiple values
+
+# you can do those to all collections
+# print(dir(fruits))  # list of diffrent methoeds we can use in collection
+# print(help(fruits))    # an explanation  of each methoed
+# print(len(fruits))   # prints the length of a string
+# print("apple" in fruits) # checks to see if a vaule is in a list and return a booleen
+ 
+
+# lists: [] ordered and changeable . duplicates are okay
+
+# fruits = ["banana" ,"apple" , "coconat" , "pineapple"] #used to store more then 1 value in a variable
+# fruits[0] = "polo" # lets you reassign something in a list
+# fruits.append("orange") # lets you add a value to the end of the list
+# fruits.remove("apple")  # lets you remove somthing from a list 
+# fruits.insert(0, "cherry") # lets you add a value to the list without replacing it with something else the number is the place you insert it
+# fruits.sort() # sorts by alphabetical order
+# fruits.reverse() # reversus a list 
+# fruits.clear() # clears the list
+# fruits.index("apple") # checks the index of a value the place it is in the list
+# fruits.count("banana") # counts how many of somthing there is in the list
+
+# sets: unordered and immutable but add/remove ok. no duplicates
+
+# fruits = {"banana" ,"apple" , "coconat" , "pineapple"}
+# fruits.add("orange") # adds an object 
+# fruits.remove("apple") # removes an object
+# fruits.pop() # rmoves the first object but cause the sets are unorderd so its randomly removes somthing
+# fruits.clear() #clears the set
+# print(fruits)
+
+
+# tuple:() ordered and unchangable. duplicates are okay.faster
+
+# fruits = ("apple, banana, orange, pineapple, apple")
+
+# fruits.index("apple") #checks to see the place of somthing in a tuple 
+# fruits.count("apple") #checks to see how many of something there in the tuple
+
+
+#dictionary: a collection of {key:value} pairs
+# orderd and changeable no duplicates
+
+# capitals = {"USA":"washington D.C",
+#            "ISREAL":"jerusalem",
+#            "RUSSIA":"moscow"}
+
+# print(capitals.get("USA")) # when you do that usa is the key and it gives the value of it 
+# print(capitals.get("japen")) # there is no japen so it will return none
+
+# capitals.update({"GERMANY": "berlin"}) #can update a dictionary or insert new values
+# capitals.update({"USA": "berlin"})
+# capitals.pop("USA") #remove keys
+# capitals.popitem() #remove the latest inserted value
+# capitals.clear() #clears the dictionary
+# keys = capitals.keys() # gets only the keys
+# value = capitals.values() #gets only the values
+
+# for value in capitals.values(): 
+#     print(value)
+
+# items = capitals.items() #print a 2d tuple list of the dictionary
+# print(items)
+
+# for key,value in capitals.items():
+#     print(f"{key} : {value}")
+
+
+
+# 2D COLLECTIONS: used to store couple of lists in a list
+
+# fruits = ["apple","banana","orange","pineapple"]
+# vegetables = ["celery", "carrots","potatos"]
+# meats = ["chicken", "fish", "turky"]
+
+# groceries = [fruits, vegetables,meats] # a list that stores 3 lists
+
+# print(groceries[0]) # if we do this insted of it giving us one value it gives the entire first list
+# print(groceries[1][0]) # if we would like an exect value like mybe we want to find celery we would use 2 brackets
+
+# if we dont want to have 3 diffrent lists then store them in 1 what we can do is:
+# groceries = [["apple","banana","orange","pineapple"],
+#             ["celery", "carrots","potatos"],
+#             ["chicken", "fish", "turky"]]
+
+# for collection in groceries: # if we want to print the list with no brackets we can do that
+#    for food in collection:
+#        print(food,end=" ")
+#    print()
+# the 2d collections is not limited to brackets we can replace them with whatever is the best for our program
+
+
+
+#random numbers
+# import random #a moudle 
+# help(random)
+# low = 1
+# high = 100
+# options = ("rock","paper","scissors") 
+# cards = ["2","3","4","5","6","7","8","9","J","Q","K","A"]
+# number = random.randint(low,high) #it will give me a random number between 1-100
+# number = random.random() # it will give a random float number from 0-1
+# option = random.choice(options) #chooses a random thing from the list
+# random.shuffle(cards) #shuffles a list
+# print(cards)
+
+
+
+
+# functions: a block of a reusable code 
+# place () after the function name to invoke it
+
+# def happy_birthday(name,age):  # a function. name is a parameter. we can have more then one parameter
+#     print(f"happy birthday to {name}")
+#     print(f"you are {age} years old")
+#     print(f"happy birthday to {name}")
+#     print(f"happy birthday to you")
+#     print()
+# happy_birthday()    # do whatever is in the function happy birthday once
+# happy_birthday()   # now it will do it twice etc... if there is a parameter in the function you cant do this
+# happy_birthday("liam","13") #thats the parameter value so name is equ to liam for this line of code
+# happy_birthday("rom","9") #now its rom so it will print liam once then rom once
+# happy_birthday("avishag","43") #43 is the age value we can make as much parameters as we want
+
+
+# return: statment used to end a function
+# and send a result back to the caller
+
+# def add(x,y):
+#     z = x + y
+#     return(z)
+
+# def subtract(x,y):
+#     z = x - y
+#     return(z)
+
+# def multiply(x,y):
+#     z = x * y
+#     return(z)
+# 
+# def divide(x,y):
+#     z = x / y
+#     return(z)
+
+# print(add(1,2))
+# print(subtract(1,2))
+# print(multiply(1,2))
+# print(divide(1,2))
+
+# def create_name(first, last):
+#    first = first.capitalize()
+#     last = last.capitalize()
+#    return first +" "+ last
+
+# full_name = create_name("liam" , "pom")
+# print(full_name)
+
+
+
+# default arguments = a default value for certin parameters 
+
+# def net_price(list_price,discount=0,tax=0.05): # in default arguments you can add a value to choosen parameter in the start
+#      return list_price * (1 - discount) * (1 + tax)
+
+# print(net_price(500)) # 500 here is the list_price value
+# print(net_price(500,0.1)) # here i reassigned discount to be 0.1 insted of its defualt so now its 0.1
+
+
+
+# keyword arguments = an argument preceded by an identifier
+
+#def hello(greeting, title, first, last):
+#    print(f"{greeting} {title} {first} {last}")
+
+# hello("hello",first="petrick",title = "Mr.",last="star")    # with keyword arguments we dont need to position the values
+
+# def get_phone(country,area,first,last):
+#     return f"{country}-{area}-{first}-{last}"
+# phone_num = get_phone(country=927,area=123,first=432,last=2343)
+# print(phone_num)
+
+
+
+#*args = allows you to pass multiple non-key arguments
+#**kwarg = allows you to pass multiple key-words arguments
+
+# def add(*args):
+#     total = 0
+#     for arg in args:
+#         total += arg
+#     return total
+# print(add(1,2,3,4,5))    # lets you add multiple value and no parameters
+
+
+# def display_name(*args):
+#     for arg in args:
+#         print(arg ,end = " ")
+
+# display_name("Dr.","spongebob","squarepants","III")        
+
+
+# def print_address(**kwargs): #kwargs we can do this: it store every thing in a dictionry
+#     for key,value in kwargs.items():
+#         print(f"{key} : {value}")
+# print_address(state="isreal",apt="69",city="tel aviv",street="123 fake street",zip="69691")
+
+
+# iterebels: an object/collection taht can return its elements one at a time allowing it to be iterated by a loop
+# there is not alot to explain about it 
+#these are itereable : lists, tuples, sets, dictionaries, strings, etc.
+
+
+# list comprehension = a concise way to create lists in python 
+# [expression for value in iterable if condition]
+
+# doubles = [x * 2 for x in range(1,11)]
+# tripels = [y * 3 for y in range(1,11)]
+# square =  [z * z for z in range (1,11)]
+# print(square)
+
+# fruits =["apple","banana","peach","cherry"]
+# fruits = [fruit.upper() for fruit in fruits]
+# print(fruits)
+
+# numbers = [1,-2,3,-4,5,-6,-7,8]
+# positive_nums = [num for num in numbers if num >0]
+# negative_nums = [num for num in numbers if num < 0]
+# even_nums = [num for num in numbers if num % 2 ==0]
+# odd_nums = [num  for num in numbers if num % 2 == 1]
+# print(odd_nums)
+
+
+# grades = [85,42,79,90,56,61,30]
+# passing_grades = [grade for grade in grades if grade >= 60]
+# print(passing_grades)
+
+
+
+
+# match-case statement = an alternative to using many elif statements 
+# excute a block of code if a value matches a case 
+
+
+# def day_of_week(day):
+#     match day: #a start to a case
+#         case 1:  #replaces if and elif with case
+#             return "it is sunday"
+#        case 2:
+#             return "it is monday"
+#         case 3:
+#             return "it is tuesday"
+#         case 4:
+#             return "it is wednesday"
+#         case 5:
+#             return "it is thursday"
+#         case 6:
+#             return "it is friday"
+#        case 7:
+#             return "it is saturday"
+#         case _:  # replaces else
+#             return "valid day"
+
+# print(day_of_week("1"))        
+
+#match case  also work with strings like that:
+
+# def day_of_week(day):
+#      match day:
+#         case "saturday" | "sunday":  #case also works with strings   | replace or
+#             return "true"
+#         case "monday" | "tuesday" | "thursday" | "friday":
+#              return "false"
+#         case _: 
+#             return "false"      
+# print(day_of_week("sunday"))        
+
+
+
+
+#moudle = a file containing code you want to include in your program 
+# use "import" to include a moudle
+
+# print(help("modules")) # all built in python basic moudle
+# print(help("math")) #gives you all the information of the moudle
+
+# import math #the normal way to import a moudle
+# print(math.pi) #most of the time you will write the name of the moudle then a function
+
+# import math as m #lets you give a nickname to the moudle
+# print(m.pi) #now insted of writing math.pi we can write m.pi
+
+# from math import pi #lets you import a speciefic thing from a moudle
+# print(pi) # if you import like that you can only write the name of the function without math.
+#from math import * makes you import everything in a moudule
+
+# to create your own moudle you create a new file in the folder of a program you are currently 
+# on and write some functions and when youre done go to the project you are on and import it
+# import python_learning_module as py  #this is a moudle i created as an exemple
+#here is an exmpele to some function i made
+
+# result = py.cube(9)
+# result = py.circumferenece
+# result= py.area
+# result = py.square
+# result = py.pi
+# print(result)
+
+
+
+# if __name__ == __main__: (this script can be imported or run alone )
+# functions and classes in this model can be reused  without the block of code excuting in our code we imported it from another code
+# In Python, the construct if __name__ == "__main__": is used to determine whether a Python script is being run as the main program or
+# if it is being imported as a module in another script.
+
+# exemple: 
+
+# script1:
+# def main():
+#     print("hello world")
+
+# if __name__=="__main__":
+#     main()
+
+# script2:
+# import script1
+# print(__name__)    # checks to see if the program runs directly or it was imported if it was imported it wont print hello world
+
+# what this does is to check if the code is running in its file directly or else it was imported to a file 
+# with that we can make sure unwanted thing will not run in our code
+
+
+
+
+
+
+# object = a bundle of releted attributes (variable) and methods (functions)
+# you need a class to create many objects
+# class = (blueprint) used to design the structure and layout of an object
+
+
+# class Car: # thats how you create a class
+
+# class methods:
+#     def __init__(self,model,year,color,for_sale): #constructor method we need this method to create objects. constructor method should always begin with self and self is not one of the parameters
+#         self.model = model #what this does is whenever we recive a model it will be placed in self.model (reassinged)
+#         self.year = year
+#         self.color = color
+#         self.for_sale = for_sale
+
+#     def drive(self):
+#         print(f"you drive the {self.color} {self.model}")
+
+#     def stop(self):
+#         print(f"you stop the {self.color} {self.model}")
+
+#     def discribe(self):
+#         print(f"{self.year} {self.color} {self.model}")
+
+
+# car1 = Car("bmw",2050,"black",False) # thats an object bmw is the value of model being reassigned to self.model etc... 
+# car2 = Car("lambo",3030,"green",True)
+# car3 = Car("tyota",2016,"grey",True)
+# print(car1.color) # thats how you print a value from an object
+# you can create as many objects as you would like
+
+# car1.drive() # when we do this it will print you drive the  and then the color of the object car1 and then   the model of it
+# car1.discribe()
+
+
+
+
+
+# class variables = shared amoung all instences of a class
+# defined outside of the counstructor
+# allow you to share data among all objects created from that class
+
+# class Students:
+#     class_year = 2024 #thats a class variable its outside of the counstructer
+#     num_students = 0
+# 
+#     def __init__(self,name,age):
+#         self.name=name
+#         self.age=age
+#         Students.num_students +=1 # here we are using Student. insted of self because num_student is a class variable
+
+# student1 = Students("spongebob",69)
+# student2 = Students("patrick",68)
+# student3 = Students("sandy",41)
+# print(student1.name)
+# print(student1.age)
+# print(Students.class_year) # insted of printing each thing from an object we can print it from the class ans its 
+# print(Students.num_students)
+
+# print(f"my graduating class of {Students.class_year} has {Students.num_students} students:")
+# print(student1.name)
+# print(student2.name)
+# print(student3.name)
+
+
+
+
+
+#inheritance = allows a class to inherit attributes and methoeds from another class
+# helps with code reusabillity and extensebilty 
+# class Child(Parent)
+
+class animal:
+    def __init__ (self,name):
+        self.name = name
+        self.is_alive = True
+
+    def eat(self):
+        print(f"{self.name} is eating")   
+
+    def sleep(self):
+        print(f"{self.name} is sleeping")
+
+class Dog(animal): #even tho there is nothing in the class the class takes everything thats in animal
+    def speek(self):
+        print("WOOF")
+
+class Cat(animal):
+    def speek(self):
+        print("MEOW")
+
+class Mouse(animal):
+   def speek(self):
+        print("SQUEEK")
+
+
+mouse = Mouse("scoby")
+cat = Cat("garfield")
+dog = Dog("lichy")
+
+print(mouse.name)
+print(mouse.is_alive)
+mouse.eat()
+mouse.sleep()
+mouse.speek()

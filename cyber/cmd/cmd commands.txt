@@ -1,0 +1,12 @@
+arp -a 
+shows all ip address which are connected to your wifi
+shutdown -i
+can shutdown pc's if you ran as adminstrator
+type in cmd 
+netsh
+then
+wlan show profile
+then
+wlan show profile ("profilename") key=clear
+
+type mstsc in cmd to get into the remote control good luck doing that

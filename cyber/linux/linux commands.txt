@@ -1,0 +1,131 @@
+linux commands:
+
+sudo...-gives you a root access for the command after it
+
+sudo apt install-installs something
+
+sudo apt update -update
+
+sudo apt upgrade-system upgrade
+
+cd-change directory like in cmd
+
+cd - go back 1 directory
+
+cd -   - goes back to the last directory you were in
+
+cd ../.. -gets you 2 directorys back
+
+cd ~ -returns you to the home directory
+
+cd / -gets you to the root directory 
+
+ls-like dir in cmd
+
+ls -l -gives more information then ls
+
+ls -la - shows you all of the premmisions of a vile or a directory
+
+man name of command-gives you
+information of a command
+
+cat-shows whatever is in a file
+
+ufw-firewall
+ 
+sudo apt install ufw-installs a firewall
+
+sudo ufw status-checks fire wall
+status
+
+sudo ufw enable/disable-as it sounds
+
+pwd-gives you your exect location
+
+wc file name - print num of lines words and letters inculdes space
+
+tree-shows the entire 
+
+tree -a -shows hidden directories
+
+sudo cat /etc/passwd -basic information about each user in the system
+
+what showen in groups when you do this command: sudo cat /etc/passwd
+
+username : password : uid-user id : gid-group id : gecos stores information on the user : home directory of the user : type of terminal the user uses
+
+sudo cat /etc/shadow:
+in this file all the passwords are stored in hash's
+
+sudo cat /var/log/auth.log:
+in there every command that had a sudo is stored there
+
+grep " " :
+used to find a something in a text
+
+nano:
+opens a file in writer mode
+
+echo:
+same as in cmd
+
+ " "<< cat:
+gets you into the file and lets you type in it
+
+mkdir-creates directories
+
+touch-creates files
+
+file-shows data withina file
+
+rm-deletes a file
+
+rm -r-deletes a directory within all of its contant
+
+ cp - copys a file
+
+mv - moves a file
+
+htop- open apps manger
+
+poweroff-turns off the computer
+
+reboot -reboots the computer
+
+premissions that can have to users:
+r / 4-can read
+w / 2-can write
+x / 1-can boot the file
+0-no premisssions
+
+chmod - can change files premmisions
+
+chmod 777-gives full premissions to everything
+
+chmod u+x -gives boot premissions to the owner
+
+chmod u-x - to remove boot premissions to the owner
+
+/. - used to run a file
+
+chmod g+x- to add boot premission
+
+ chmod o+r - to give read premissions to the else group
+
+chmod o+w -to give write premissions to the else group
+
+chmod +x - to allow everyone to run the file
+
+chmod -x-to remove everyone premissions to run the file
+
+chmod -R -to change the premissions of the entire files in a directory
+
+when we want to give premmissions you need to use numbers:
+like 755
+so 7 means the premissions of the owner then the grop then else group
+
+umask - 022 from every premmision being set we subtruct the folowing number
+so if we gave this premision 755 we actely gave the premission 733
+
+we can or check the user umask by typing umask
+to change we do this: umask (then the number we want to change to) 

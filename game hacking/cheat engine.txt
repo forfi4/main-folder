@@ -1,0 +1,33 @@
+there you will find things you can do in cheat engine>
+
+known value:
+you open a program in cheat engine theres a computer sign in the top press it
+then in scan type do exect scan and 4 bytes 
+then do start scan
+then enter the value and then next scan enter the value after it got change etc until there is only 1 option left
+
+unknown value:
+you open a program in cheat engine theres a computer sign in the top press it
+then in scan type do Unknown initial value and 4 bytes
+click first scan lose some health then choose deacreased value then next scan etc until there is only a couple left then choose the 1 that fits the most
+
+floating point:
+some games use floating point to store values so it will be harder to hack them
+you open a program in cheat engine theres a computer sign in the top press it
+then in scan type do exect value and choose float in value type
+then as normal
+
+double value:
+you open a program in cheat engine theres a computer sign in the top press it
+then in scan type do exect value and double in value type then disable fast scan on the bottom
+
+code changer:
+sometimes the addres of a value is changed mid game or when we exit so a normal scan wouldnt work so there im going to explain how we can do it
+you open a program in cheat engine theres a computer sign in the top press it
+then in scan type do what scan type is the best fit for the game and the same in scan type
+and scan until you find the correct one 
+the problem with this one is that the adress of the value changes so its going to be harder so what youre gonna do is
+when you find the correct one right click on it then choose find what writes to this address
+then change the value and go to the assembeler and change the main instruction to nothing so it wont let it change values again then stop it and it should work 
+
+
