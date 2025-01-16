@@ -18,5 +18,4 @@ def spam(msg, maxMsg):
         if count == 1000:
             sleep(8)
 
-spam("happy birthday",100)  
-
+spam("NIGGER",100)  

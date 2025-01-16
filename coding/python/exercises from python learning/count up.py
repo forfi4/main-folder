@@ -8,4 +8,4 @@ def count(end,start=0):
         time.sleep(1)
     print("done!")
 
-(count(10,5))       
+(count(3,2))       

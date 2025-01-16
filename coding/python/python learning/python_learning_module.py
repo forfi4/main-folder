@@ -1,6 +1,6 @@
 # this is how you can create a moudle yourself
 pi = 3.14159
- 
+
 def square(x):
     return x ** 2
 
@@ -12,4 +12,3 @@ def circumferenece(radius):
 
 def area(radius):
     return pi* radius
-

@@ -858,36 +858,78 @@
 # helps with code reusabillity and extensebilty 
 # class Child(Parent)
 
-class animal:
-    def __init__ (self,name):
+# class animal:
+#     def __init__ (self,name):
+#         self.name = name#         self.is_alive = True
+
+#     def eat(self):
+
+#         print(f"{self.name} is eating")   
+
+#     def sleep(self):
+#         print(f"{self.name} is sleeping")
+
+# class Dog(animal): #even tho there is nothing in the class the class takes everything thats in animal
+#     def speek(self):
+#         print("WOOF")
+
+# class Cat(animal):
+#     def speek(self):
+#         print("MEOW")
+        
+# class Mouse(animal):
+#    def speek(self):
+#         print("SQUEEK")
+
+
+# mouse = Mouse("scoby")
+# cat = Cat("garfield")
+# dog = Dog("lichy")
+
+# print(mouse.name)
+# print(mouse.is_alive)
+# mouse.eat()
+# mouse.sleep()
+# mouse.speek()
+
+# multiple inheritance = inherit from more then one parent class
+# c(a,b)
+
+#multilevel inheritance = inherit from a parent which inherit s from another parent 
+# c(b) --> b(a) --> a
+
+class Animal:
+
+    def __init__(self,name):
         self.name = name
-        self.is_alive = True
 
-    def eat(self):
-        print(f"{self.name} is eating")   
+            
 
-    def sleep(self):
-        print(f"{self.name} is sleeping")
+    def eating(self):
+        print(f"{self.name} is eating")
 
-class Dog(animal): #even tho there is nothing in the class the class takes everything thats in animal
-    def speek(self):
-        print("WOOF")
+    def sleeping(self):
+        print(f"{self.name} is sleeping")    
 
-class Cat(animal):
-    def speek(self):
-        print("MEOW")
+class Prey(Animal):
+    def flee(self):
+        print(f"{self.name} is fleeing")
 
-class Mouse(animal):
-   def speek(self):
-        print("SQUEEK")
+class Predetor(Animal):
+    def hunting(self):
+        print(f"{self.name} is hunting")
 
+class Rabbit(Prey):
+    pass
 
-mouse = Mouse("scoby")
-cat = Cat("garfield")
-dog = Dog("lichy")
+class Hawk(Predetor):
+    pass
 
-print(mouse.name)
-print(mouse.is_alive)
-mouse.eat()
-mouse.sleep()
-mouse.speek()
+class Fish(Prey,Predetor):
+    pass
+
+fish = Fish('bugy')
+rabbit = Rabbit('terry')
+hawk = Hawk('ferry') 
+fish.eating()
+

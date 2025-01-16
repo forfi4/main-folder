@@ -1,14 +1,19 @@
 # python calculator
 import math 
-
+from a import *
 while True:
     operator = input("Enter an operator ( +, -, *, /, **, square root, pi, odd or even): ")
 
     if operator == "+":
-        num1 = float(input("Enter the 1st number: "))
-        num2 = float(input("Enter the 2nd number: "))
-        result = num1 + num2
-        print(f"The value is EQU {round(result, 3)} ")
+    
+        num1 = (input("Enter the 1st number: "))
+        num2 = (input("Enter the 2nd number: "))
+        if isnumber(num1) and  isnumber(num2):
+            result = float(num1) + float(num2)
+            print(f"The value is EQU {round(result, 3)} ")
+        else:
+            print('one of them is not a number (i know you did this on perpose you soca blet)')
+
 
     elif operator == "-":
         num1 = float(input("Enter the 1st number: "))

@@ -4,9 +4,23 @@ sudo...-gives you a root access for the command after it
 
 sudo apt install-installs something
 
+sudo - i - gives you root preveleges untill you close the terminal
+
 sudo apt update -update
 
+apt show (packege name)-gives you information about a packge
+
+apt list --installed-shows all installed packeges
+
+sudo apt list --upgrade-gives you a list of all upgrades available
+
+sudo apt --fix-broekn install (packege name) - fixes all broken things in an install
+
 sudo apt upgrade-system upgrade
+
+sudo apt full-upgrade-upgrade every packege in kali
+
+sudo apt remove (packege name)-removes a packege
 
 cd-change directory like in cmd
 
@@ -51,7 +65,6 @@ tree -a -shows hidden directories
 sudo cat /etc/passwd -basic information about each user in the system
 
 what showen in groups when you do this command: sudo cat /etc/passwd
-
 username : password : uid-user id : gid-group id : gecos stores information on the user : home directory of the user : type of terminal the user uses
 
 sudo cat /etc/shadow:
@@ -62,6 +75,12 @@ in there every command that had a sudo is stored there
 
 grep " " :
 used to find a something in a text
+
+grep -i:
+looks at the actual letter and ignors if its capitalized or not 
+
+'grep  '^letter:
+checks everything that starts with the letter you chose
 
 nano:
 opens a file in writer mode
@@ -76,11 +95,19 @@ mkdir-creates directories
 
 touch-creates files
 
-file-shows data withina file
+file-shows data within a file
+
+stat- shows more data
 
 rm-deletes a file
 
+clear-clears screen
+
 rm -r-deletes a directory within all of its contant
+
+find -type f:
+finds file in a directory
+
 
  cp - copys a file
 
@@ -96,6 +123,8 @@ premissions that can have to users:
 r / 4-can read
 w / 2-can write
 x / 1-can boot the file
+d-directory
+u-owner
 0-no premisssions
 
 chmod - can change files premmisions
@@ -122,10 +151,59 @@ chmod -R -to change the premissions of the entire files in a directory
 
 when we want to give premmissions you need to use numbers:
 like 755
-so 7 means the premissions of the owner then the grop then else group
+so 7 means the premissions of the owner then the group then else group
 
 umask - 022 from every premmision being set we subtruct the folowing number
 so if we gave this premision 755 we actely gave the premission 733
 
 we can or check the user umask by typing umask
 to change we do this: umask (then the number we want to change to) 
+
+sudo useradd (username)-creates a new user
+
+sudo adduser (username)-also creates a goup and asks for a password for the user
+
+sudo passwd (username)-gives the user a password of your choice
+
+sudo groupadd (groupName)-creates a new group
+
+sudo userdel (username)-deletes a user
+
+sudo chown (username) (fileName)-gives the usernmae in the brackets but without them owner to the file name
+
+sudo chgrp (group name) (filename)-changes a files group and moves its premissions to the new group
+
+ sudo username:groupname filename -changes both the group and the owner user within a file
+
+sudo nano /etc/sudoers - opens premissions directory in writer mode there we can add users to have sudo privliges
+
+sudo mkdir - creates a file in sudo premissions so only sudoers can so things in the file 
+
+su -username -change users
+
+>-takes the output into a file   
+
+apache2- a pack used to run servers
+
+sudo systemctl start apache2 -starts apace2
+
+sudo systemctl status apache2- checks if apache is up
+
+ sudo wget -p -P /var/www/html/site addres - copies the entire code of the site to a folder
+
+sudo mv filename /new file name - changes the name of a file
+
+sudo cp path - copies something to a path
+
+| - combiens two commands
+
+variable - we can create a variable for the window we created
+
+to set a variable: variable_name=$(whatever) 
+
+note:when you write diffrent things you should use queots or something else like in python
+
+to see it after: echo $variable name
+
+echo "apple, banana, orange" | cut -d "," -f 1:
+theres a list cut is as it sounds -d "," what it does is make everything that touchs ',' a field -f 1 cuts the first one
